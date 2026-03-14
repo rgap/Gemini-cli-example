@@ -377,8 +377,8 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-12">
             Meet the Team
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden grayscale hover:grayscale-0 transition-all">
                   <div className="w-full h-full flex items-center justify-center text-gray-400">
