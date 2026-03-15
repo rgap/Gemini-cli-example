@@ -4,4 +4,5 @@ prompt ='''
 - Create and switch to a new branch with name {{args}}
 - If the branch with name {{args}} already exists, switch to it
 - If the branch with name {{args}} does not exist, create it and switch to it
+- Briefly summarize what you've done to the user
 '''
