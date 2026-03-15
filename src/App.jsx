@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   ChevronRight,
   Github,
   Globe,
@@ -29,13 +28,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div
-            className="flex-shrink-0 flex items-center gap-2 cursor-pointer"
+            className="shrink-0 flex items-center gap-2 cursor-pointer"
             onClick={() => setCurrentPage("home")}
           >
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
               <Zap className="text-white w-5 h-5" />
             </div>
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600">
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-violet-600">
               Lumina
             </span>
           </div>
@@ -217,12 +216,12 @@ const HomePage = () => {
           </span>
           <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 tracking-tight mb-6">
             Everything you need <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-600 to-violet-600">
               to scale faster.
             </span>
           </h1>
-          <p className="max-w-2xl mx-auto text-xl text-gray-600 mb-10 leading-relaxed">
-            Lumina is the world's most advanced platform for building,
+          <p className="max-w-2xl mx-auto text-2xl text-gray-600 mb-10 leading-relaxed">
+            Lumina is the world&apos;s most advanced platform for building,
             deploying, and scaling modern web applications without managing
             infrastructure.
           </p>
@@ -313,7 +312,7 @@ const AboutPage = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
                     <div className="w-2 h-2 rounded-full bg-indigo-600" />
                   </div>
                   <div>
@@ -327,7 +326,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
                     <div className="w-2 h-2 rounded-full bg-indigo-600" />
                   </div>
                   <div>
@@ -377,8 +376,8 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-12">
             Meet the Team
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden grayscale hover:grayscale-0 transition-all">
                   <div className="w-full h-full flex items-center justify-center text-gray-400">
